@@ -2,6 +2,8 @@ import openai
 import time
 import os
 
+API_KEY = YOUR_KEY
+
 def query_openai_model(api_key: str, prompt: str, model: str = "gpt-3.5-turbo-0301", max_tokens: int = 128, temperature: float = 0):
     openai.api_key = api_key
 
@@ -18,7 +20,7 @@ def query_openai_model(api_key: str, prompt: str, model: str = "gpt-3.5-turbo-03
 
 
 def infer(infile, outfile):
-    api_key = "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"
+    api_key = API_KEY
     
 
     existing_outputs = []
